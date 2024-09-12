@@ -1,0 +1,496 @@
+@font-face {
+    font-family: Sans;
+    src: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(20, 20, 38);
+}
+
+.navcontainer {
+    display:block;
+    position:fixed;
+    width: auto;
+    }
+    
+    .navbar {
+        background:rgba(20,20,38);
+        width: 1400px;
+        height: 60px;
+        display:grid;
+        position:relative;
+    }
+    
+    .menulist {
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+        font-weight: bold;
+        font-style: bold;
+    }
+    
+    .itemsmenu {
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    li {
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    justify-content: end;
+    }
+    
+    #logo {
+        width: 130px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .menu2 {
+        display: flex;
+        align-items: center;
+    }
+
+    #app-movil{
+        color: white;
+        font-size: 10px;
+        font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+        font-weight: bold;
+        font-style: bold;
+        padding-left: 5px;  
+    }
+    
+    .menu3 {
+        padding-left: 230px;
+        display: flex;
+        justify-content: left;
+    }
+
+    #boton-iniciar-seccion{
+    background: rgb(248, 0, 0);
+    color: white;
+    height: 27px;
+    width: 100px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+    }
+    
+    .logoandroid {
+        width: 30px;
+        align-items: center;
+    }
+    
+    #lupa {
+        width: 30px;
+        padding-left: 2px;
+        align-items: center;
+    }
+
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.div-hola:before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(20,20,38,0.37) 80%,rgba(20,20,38,0.99) 90%);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.flechas-slider{
+    width: 20px;
+    height: 30px;
+    opacity: 80%;
+}
+
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-2,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.card{
+    background-color: rgb(20, 20, 38);
+    border: none;
+}
+
+.bannercards{
+    background-color:rgb(38, 42, 54);
+    margin-top: -3px;
+    height: 50px;
+}
+
+.textcards{
+    padding-left:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(233, 235, 240);
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.img-fluid{
+    border-radius: 3px;
+    height: 140px;
+}
+
+.carousel{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.texto-slider{
+    color: white;
+    font-size: 14px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#titulo-slider{
+    font-size: 30px;
+    color: white;
+}
+
+.div-hola{
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-style: bold;
+    background:url(Imagenes/Chastity\ High.jpg);
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   
+}
+
+#item2{
+    background: url(Imagenes/MissNightAndDay.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+#item2:before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(20,20,38,0.37) 80%,rgba(20,20,38,0.99) 90%);
+}
+
+#item3{
+    background: url(Imagenes/CinderellaAt2AM-A.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+#item3:before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(20,20,38,0.37) 80%,rgba(20,20,38,0.99) 90%);
+}
+
+#item4{
+    background: url(Imagenes/DNA-Lover.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+#item4:before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(20,20,38,0.37) 80%,rgba(20,20,38,0.99) 90%);
+}
+
+#item5{
+    background: url(Imagenes/RomanceInTheHouse.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+#item5:before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(20,20,38,0.37) 80%,rgba(20,20,38,0.99) 90%);
+}
+
+#item6{
+    background: url(Imagenes/Marry-My-Husband-1-120124.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+#item6:before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(20,20,38,0.37) 80%,rgba(20,20,38,0.99) 90%);
+}
+
+.icon-slider{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#boton-verahora{
+    background: rgb(248, 0, 0);
+    color: white;
+    height: 27px;
+    width: 100px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+.info-icons{
+    display: flex;
+}
+
+.botones-slider{
+    display: flex;
+}
+
+.boton-clasificacion{
+    color: white;
+    font-size: 10px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+    text-align: center;
+    background: gray;
+    border-radius: 2px;
+    border: none;
+    width: 30px;
+    height: 25px;
+}
+
+.boton-calidad{
+    font-size: 11px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    background: black;
+    border-color: rgb(207, 203, 203);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-left: 10px;
+    width: 30px;
+    height: 25px;
+}
+
+.boton-tipo{
+    color: white;
+    font-size: 10px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    text-align: center;
+    background: gray;
+    border-radius: 20px;
+    border:none;
+    margin-left: 10px;
+    width: 60px;
+}
+
+.boton-estado{
+    color: white;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    background: rgb(248, 0, 0);
+    border-radius: 20px;
+    border:none;
+    margin-left: 10px;
+    width: 60px;
+}
+
+#finalizado{
+    color: white;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    background: rgba(0, 248, 0, 0.863);
+    border-radius: 20px;
+    border:none;
+    margin-left: 10px;
+    width: 65px;
+}
+
+.index-buttons{
+    display: flex;
+    list-style: none;
+    padding: 60px;
+}
+
+.abc-boton{
+    color: white;
+    font-size: 15px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+    text-align: center;
+    background: rgb(45, 47, 61);
+    border-radius: 2px;
+    border: none;
+    width: 40px;
+    height: 30px;
+    align-items: center;
+    padding-left: 1px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.titulo-seccion{
+    color: white;
+    font-size: 21px;
+    font-family: url(Fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+    padding-left: 20px;
+}
+
+.seccion-ultimos-episodios{
+    display: flex;
+    padding-left: 40px;
+}
+
+.flecha-seccion{
+    width: 7px;
+    height: 9px;
+}
+
+.icon-link-hover{
+    padding-left: 10px;
+}
+
